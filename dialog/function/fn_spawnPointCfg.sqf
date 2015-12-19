@@ -18,10 +18,10 @@ switch (_side) do
 	{
 		_return = [
 			["cop_spawn_1","NATO North HQ",""],
+			["cop_spawn_5","NATO South HQ",""],
+			["cop_spawn_4","NATO Air Unit",""]
 			// ["cop_spawn_2","Pyrgos HQ",""],
 			// ["cop_spawn_3","Athira HQ",""],
-			["cop_spawn_4","NATO Air Unit",""],
-			["cop_spawn_5","NATO South HQ",""]
 		];
 	};
 	
@@ -47,9 +47,9 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_2","Rasman Medical",""],
+			["medic_spawn_1","Garmsar Medical",""],
+			["medic_spawn_3","Chaman Medical",""]
 		];
 	};
 };
