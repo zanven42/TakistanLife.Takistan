@@ -17,21 +17,21 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Kavala HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_1","NATO North HQ",""],
+			// ["cop_spawn_2","Pyrgos HQ",""],
+			// ["cop_spawn_3","Athira HQ",""],
+			["cop_spawn_4","NATO Air Unit",""],
+			["cop_spawn_5","NATO South HQ",""]
 		];
 	};
 	
 	case civilian:
 	{
 		_return = [
-			["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_1","Rasman",""],
+			["civ_spawn_2","North Karachinar",""],
+			["civ_spawn_3","Chaman",""],
+			["civ_spawn_4","Nagara",""]
 		];
 		
 		if(count life_houses > 0) then {
