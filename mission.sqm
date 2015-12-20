@@ -2697,8 +2697,8 @@ class Mission
 				};
 				class Item51
 				{
-					position[]={13442.272,543.18805,7592.5923};
-					azimut=-188.16985;
+					position[]={5970.3379,83.040001,11528.861};
+					azimut=-42.434246;
 					special="NONE";
 					id=148;
 					side="WEST";
@@ -2708,8 +2708,8 @@ class Mission
 				};
 				class Item52
 				{
-					position[]={13449.638,542.04797,7580.0767};
-					azimut=-78.833679;
+					position[]={6086.562,82.606369,11480.059};
+					azimut=-406.04709;
 					special="NONE";
 					id=149;
 					side="WEST";
@@ -2719,14 +2719,14 @@ class Mission
 				};
 				class Item53
 				{
-					position[]={13489.421,452.47198,6995.7065};
-					azimut=37.435032;
+					position[]={6083.7939,82.550468,11477.754};
+					azimut=-49.9888;
 					special="NONE";
 					id=150;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pygros District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;   this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];   this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""];   this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""cop_equipment""];  this addAction[""Patrol Loadout"",life_fnc_weaponShopMenu,""cop_basic""]; ";
 				};
 				class Item54
 				{
@@ -2903,7 +2903,7 @@ class Mission
 				};
 				class Item69
 				{
-					position[]={13464.563,448.96133,7022.7559};
+					position[]={5946.7124,83.040001,11535.205};
 					azimut=197.21715;
 					special="NONE";
 					id=166;
@@ -3364,7 +3364,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3710;
+		items=3711;
 		class Item0
 		{
 			position[]={6905.0098,56.439846,11355.115};
@@ -40557,10 +40557,20 @@ class Mission
 			skill=0.60000002;
 			text="air_sp_1";
 		};
+		class Item3710
+		{
+			position[]={6089.5928,82.747841,11485.338};
+			azimut=132.26964;
+			id=3913;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
 	};
 	class Markers
 	{
-		items=202;
+		items=203;
 		class Item0
 		{
 			position[]={250.17896,135.02246,12561.418};
@@ -40624,17 +40634,16 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={13467.469,449.68781,7012.5259};
+			position[]={5949.6177,83.040001,11524.975};
 			name="cop_spawn_2";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={13430.897,544.13031,7603.0718};
+			position[]={6083.8745,82.986336,11501.32};
 			name="cop_spawn_3";
-			text="Police Station";
-			type="mil_box";
-			colorName="ColorBLUFOR";
+			text=" TPF Rasman LAC";
+			type="Faction_INS";
 		};
 		class Item11
 		{
@@ -40684,7 +40693,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={13487.35,448.04431,7040.561};
+			position[]={5969.4985,83.040001,11553.01};
 			name="police_hq_2";
 			text="Police Station";
 			type="mil_box";
@@ -41303,24 +41312,24 @@ class Mission
 		};
 		class Item94
 		{
-			position[]={13438.831,541.94055,7579.0435};
+			position[]={6075.23,82.89209,11491.863};
 			name="cop_car_2";
 			type="Empty";
-			angle=48.511902;
+			angle=-401.7027;
 		};
 		class Item95
 		{
-			position[]={13495.768,451.50644,7001.1743};
+			position[]={5977.9165,83.040001,11513.623};
 			name="cop_car_3";
 			type="Empty";
 			angle=47.457199;
 		};
 		class Item96
 		{
-			position[]={13445.899,542.78418,7588.0024};
+			position[]={5971.0542,83.040001,11529.677};
 			name="cop_air_2";
 			type="Empty";
-			angle=131.20648;
+			angle=-134.95741;
 		};
 		class Item97
 		{
@@ -42174,6 +42183,14 @@ class Mission
 			position[]={6572.7651,62.249489,11386.976};
 			name="med_heli";
 			type="Empty";
+		};
+		class Item202
+		{
+			position[]={6089.498,82.748512,11485.357};
+			name="atm_marker_2_3_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=-46.950462;
 		};
 	};
 };

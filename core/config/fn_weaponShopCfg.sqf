@@ -20,28 +20,22 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_shop) do
 {
-	case "cop_basic":
+		case "cop_equipment":
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			default
+			case (playerside !=west):{"You are not a cop"};
+			case (__GETC__(life_coplevel) > 0):
 			{
-				["Altis Cop Shop",
+				["Basic Equipment",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["HandGrenade_Stone","Flashbang",1700],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
-						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["NVGoggles",nil,2000]
 					]
 				];
 			};
@@ -69,6 +63,100 @@ switch(_shop) do
 		};
 	};
 
+	case "cop_basic":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) == 0): {"You are not a whitelisted officer of the law!"};
+			case (__GETC__(life_coplevel) == 1):
+			{
+				["TSF Private Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 2):
+			{
+				["TSF Corporal Loadout",
+					[
+							
+							["hgun_Pistol_Signal_F","Flare Gun",10000],
+							["6Rnd_GreenSignal_F","Green Flare",1000],
+							["HandGrenade_Stone","Flashbang",1700]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 3):
+			{
+				["TSF Sergeant Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 4):
+			{
+				["TSF Staff Segeant Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 5):
+			{
+				["NATO 1st Lieutenant Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 6):
+			{
+				["NATO Captain Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 7):
+			{
+				["NATO Major Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) >= 8):
+			{
+				["NATO General Loadout",
+					[
+							["HandGrenade_Stone","Flashbang",1700],
+							["hgun_Pistol_Signal_F","Flare Gun",10000]
+
+					]
+				];
+			};
+		};
+	};
+	
 	case "cop_patrol":
 	{
 		switch(true) do
