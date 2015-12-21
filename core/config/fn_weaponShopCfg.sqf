@@ -76,9 +76,11 @@ switch(_shop) do
 							["arifle_sdar_F","Taser Rifle",20000],
 							["hgun_P07_snds_F","Stun Pistol",2000],
 							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
 							["16Rnd_9x21_Mag",nil,50],
-							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
-
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125]
+							
 					]
 				];
 			};
@@ -86,10 +88,15 @@ switch(_shop) do
 			{
 				["TSF Corporal Loadout",
 					[
-							
-							["hgun_Pistol_Signal_F","Flare Gun",10000],
-							["6Rnd_GreenSignal_F","Green Flare",1000],
-							["HandGrenade_Stone","Flashbang",1700]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000]
 
 					]
 				];
@@ -98,8 +105,20 @@ switch(_shop) do
 			{
 				["TSF Sergeant Loadout",
 					[
-							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700]
 
 					]
 				];
@@ -108,8 +127,25 @@ switch(_shop) do
 			{
 				["TSF Staff Segeant Loadout",
 					[
-							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["SmokeShellBlue","TearGas",50]
 
 					]
 				];
@@ -118,8 +154,29 @@ switch(_shop) do
 			{
 				["NATO 1st Lieutenant Loadout",
 					[
-							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["SmokeShellBlue","TearGas",50]
 
 					]
 				];
@@ -128,8 +185,31 @@ switch(_shop) do
 			{
 				["NATO Captain Loadout",
 					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
 							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["SmokeShellBlue","TearGas",50]
 
 					]
 				];
@@ -138,8 +218,32 @@ switch(_shop) do
 			{
 				["NATO Major Loadout",
 					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_srifle_M24_ghillie","	M24 (camo woodland)",1700],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
 							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["SmokeShellBlue","TearGas",50]
 
 					]
 				];
@@ -148,8 +252,32 @@ switch(_shop) do
 			{
 				["NATO General Loadout",
 					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_srifle_M24_ghillie","M24 (camo woodland)",1700],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
 							["HandGrenade_Stone","Flashbang",1700],
-							["hgun_Pistol_Signal_F","Flare Gun",10000]
+							["SmokeShellBlue","TearGas",50]
 
 					]
 				];

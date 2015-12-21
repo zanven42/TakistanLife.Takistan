@@ -2968,7 +2968,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; ";
 				};
 				class Item75
 				{
@@ -3231,7 +3231,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Terrorist Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Terrorist Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item98
 				{
@@ -5861,8 +5861,8 @@ class Mission
 		};
 		class Item250
 		{
-			position[]={8281.5947,296.04001,2102.0703};
-			azimut=-215.89233;
+			position[]={8281.8369,296.04001,2101.6985};
+			azimut=-210.93614;
 			id=453;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -41780,11 +41780,11 @@ class Mission
 		};
 		class Item156
 		{
-			position[]={8281.499,296.04001,2102.1216};
+			position[]={8281.7451,296.04001,2101.7566};
 			name="atm_marker";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-395.11249;
+			angle=-390.15634;
 		};
 		class Item157
 		{
