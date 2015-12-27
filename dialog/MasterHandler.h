@@ -25,3 +25,5 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "compensate.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

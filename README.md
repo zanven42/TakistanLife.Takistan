@@ -7,5 +7,4 @@ Empire Gaming Current to-do list
 * Civilian Uniforms
 * Add Legal Gunstore Weapons
 * Medic/Civ/Cop Vehicles
-* Add Passport lisence
 * Map Editing.

@@ -217,6 +217,17 @@ class playerSettings {
 			h = (1 / 25);
 		};
 		
+		class ButtonMarket : Life_RscButtonMenu {
+			idc = -1;
+			text = "Market";
+			onButtonClick = "createDialog ""life_dynmarket_prices"";";
+			//x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
 		class ButtonSettings : life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Settings";
