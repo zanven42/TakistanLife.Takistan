@@ -20,14 +20,38 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_shop) do
 {
-		case "cop_equipment":
+	case "tpf_equipment":
 	{
 		switch(true) do
 		{
-			case (playerside !=west):{"You are not a cop"};
-			case (__GETC__(life_coplevel) > 0):
+			case (playerside !=west):{"You are not a TPF Member"};
+			case (__GETC__(life_coplevel) >= 9): {"You are not a TPF Member"};
+			case (__GETC__(life_coplevel) <= 8):
 			{
-				["Basic Equipment",
+				["TPF Equipment",
+					[
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000]
+					]
+				];
+			};
+		};
+	};
+	
+	case "nato_equipment":
+	{
+		switch(true) do
+		{
+			case (playerside !=west):{"You are not a NATO Member"};
+			case (__GETC__(life_coplevel) <= 8): {"You are not a NATO Member"};
+			case (__GETC__(life_coplevel) >= 9):
+			{
+				["NATO Equipment",
 					[
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
@@ -63,12 +87,12 @@ switch(_shop) do
 		};
 	};
 
-	case "cop_basic":
+	case "tpf_loadout":
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) == 0): {"You are not a whitelisted officer of the law!"};
+			case (playerSide != west): {"You are not a TPF Member!"};
+			case (__GETC__(life_coplevel) >= 9): {"You are not a TPF Member"};
 			case (__GETC__(life_coplevel) == 1):
 			{
 				["TSF Private Loadout",
@@ -152,7 +176,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 5):
 			{
-				["NATO 1st Lieutenant Loadout",
+				["TPF 1st Lieutenant Loadout",
 					[
 							["arifle_sdar_F","Taser Rifle",20000],
 							["hgun_P07_F",nil,7500],
@@ -183,7 +207,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 6):
 			{
-				["NATO Captain Loadout",
+				["TPF Captain Loadout",
 					[
 							["arifle_sdar_F","Taser Rifle",20000],
 							["hgun_P07_F",nil,7500],
@@ -216,7 +240,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 7):
 			{
-				["NATO Major Loadout",
+				["TPF Major Loadout",
 					[
 							["arifle_sdar_F","Taser Rifle",20000],
 							["hgun_P07_snds_F","Stun Pistol",2000],
@@ -248,9 +272,9 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) >= 8):
+			case (__GETC__(life_coplevel) == 8):
 			{
-				["NATO General Loadout",
+				["TPF General Loadout",
 					[
 							["arifle_sdar_F","Taser Rifle",20000],
 							["hgun_P07_snds_F","Stun Pistol",2000],
@@ -284,52 +308,222 @@ switch(_shop) do
 			};
 		};
 	};
-	
-	case "cop_patrol":
+	case "nato_loadout":
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
-			default
+			case (playerSide != west): {"You are not a NATO Member!"};
+			case (__GETC__(life_coplevel) <= 8): {"You are not a NATO Member"};
+			case (__GETC__(life_coplevel) == 9):
 			{
-				["Altis Patrol Officer Shop",
+				["NATO Private Loadout",
 					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_9x21_Mag",nil,250]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125]
+							
 					]
 				];
 			};
-		};
-	};
-
-	case "cop_sergeant":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
-			default
+			case (__GETC__(life_coplevel) == 10):
 			{
-				["Altis Sergeant Officer Shop",
+				["NATO Corporal Loadout",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 11):
+			{
+				["NATO Sergeant Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 12):
+			{
+				["NATO Staff Segeant Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",1000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["SmokeShellBlue","TearGas",50]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 13):
+			{
+				["NATO 1st Lieutenant Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["SmokeShellBlue","TearGas",50]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 14):
+			{
+				["NATO Captain Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
+							["HandGrenade_Stone","Flashbang",1700],
+							["SmokeShellBlue","TearGas",50]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 15):
+			{
+				["NATO Major Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_srifle_M24_ghillie","	M24 (camo woodland)",1700],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
+							["HandGrenade_Stone","Flashbang",1700],
+							["SmokeShellBlue","TearGas",50]
+
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) >= 16):
+			{
+				["NATO General Loadout",
+					[
+							["arifle_sdar_F","Taser Rifle",20000],
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_F",nil,7500],
+							["CUP_smg_MP5A5","MP5A5",20000],
+							["CUP_arifle_M4A1_black","M4A1 (black)",10000],
+							["CUP_arifle_G36A","G36A",10000],
+							["CUP_arifle_XM8_Carbine","XM8",1700],
+							["CUP_arifle_FNFAL_railed","FN FAL (Railed)",1700],
+							["CUP_arifle_Mk16_CQC","Mk16 Mod 0 CQC",1700],
+							["CUP_arifle_CZ805_A1","CZ 805 A1",10000],
+							["CUP_srifle_M14","	M14",10000],
+							["CUP_arifle_L85A2_Holo_laser","L85A2 Assault Rifle",1700],
+							["CUP_srifle_M24_wdl_LeupoldMk4LRT","M24 (woodland)",10000],
+							["CUP_srifle_M24_ghillie","M24 (camo woodland)",1700],
+							["CUP_launch_RPG7V","RPG-7V",10000],
+							["CUP_30Rnd_556x45_G36","30Rnd 5.56mm G36",1700],
+							["CUP_30Rnd_9x19_MP5","30Rnd 9mm Magazine",125],
+							["CUP_20Rnd_762x51_FNFAL_M","20Rnd 7.62mm FNFAL",1700],
+							["CUP_30Rnd_556x45_Stanag","30Rnd 5.56mm STANAG",50],
+							["CUP_20Rnd_762x51_DMR","20Rnd 7.62mm DMR",50],
+							["CUP_5Rnd_762x51_M24","5Rnd 7.62mm M24",10000],
+							["16Rnd_9x21_Mag",nil,50],
+							["20Rnd_556x45_UW_mag","Taser Magazine",125],
+							["CUP_PG7V_M","RPG 18",10000],
+							["HandGrenade_Stone","Flashbang",1700],
+							["SmokeShellBlue","TearGas",50]
+
 					]
 				];
 			};

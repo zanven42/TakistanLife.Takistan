@@ -2656,7 +2656,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false;  this allowDamage false;   this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];   this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""];   this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""cop_equipment""];  this addAction[""Patrol Loadout"",life_fnc_weaponShopMenu,""cop_basic""]; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""nato_equipment""]; this addAction[""NATO Loadout"",life_fnc_weaponShopMenu,""nato_loadout""]; ";
 				};
 				class Item48
 				{
@@ -2724,7 +2724,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;   this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];   this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""];   this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""cop_equipment""];  this addAction[""Patrol Loadout"",life_fnc_weaponShopMenu,""cop_basic""]; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""tpf_equipment""]; this addAction[""TSF Loadout"",life_fnc_weaponShopMenu,""tpf_loadout""]; ";
 				};
 				class Item54
 				{
@@ -2922,7 +2922,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_2";
-					init="this enableSimulation false;  this allowDamage false;   this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];   this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""];   this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""cop_equipment""];  this addAction[""Patrol Loadout"",life_fnc_weaponShopMenu,""cop_basic""];   this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Patrol Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[""Basic Equipment"",life_fnc_weaponShopMenu,""nato_equipment""]; this addAction[""NATO Loadout"",life_fnc_weaponShopMenu,""nato_loadout""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; ";
 				};
 				class Item71
 				{
@@ -40619,7 +40619,7 @@ class Mission
 		{
 			position[]={6083.8745,82.986336,11501.32};
 			name="cop_spawn_3";
-			text=" TSF LAC";
+			text=" TPF LAC";
 			type="Faction_INS";
 		};
 		class Item11
