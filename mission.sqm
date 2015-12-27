@@ -2784,7 +2784,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_3";
-					init="this allowDamage false;  this enableSimulation false; this addAction[format[""%1 ($%2)"",[""license_civ_passport]""] call life_fnc_varToStr,[([""passport]""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""passport"",0,false,false,"""",' !license_civ_passport && playerSide == civilian '];  ";
+					init="this allowDamage false;  this enableSimulation false; this addAction[format[""%1 ($%2)"",[""license_civ_passport""] call life_fnc_varToStr,[([""passport""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""passport"",0,false,false,"""",' !license_civ_passport && playerSide == civilian '];  ";
 				};
 				class Item59
 				{
