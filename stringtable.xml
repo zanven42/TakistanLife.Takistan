@@ -3573,6 +3573,10 @@
 		</Key>
 	</Package>
 	<Package name="Life_License">
+		<Key ID="STR_License_Passport">
+			<Original>Passport</Original>
+			<English>Passport</English>
+		</Key>
 		<Key ID="STR_License_Driver">
 			<Original>Driver License</Original>
 			<English>Driver License</English>

@@ -2775,8 +2775,8 @@ class Mission
 				};
 				class Item58
 				{
-					position[]={539.0058,243.08984,2846.5588};
-					azimut=-554.55524;
+					position[]={5952.1108,106.65419,7796.0947};
+					azimut=-554.55499;
 					offsetY=0.1;
 					special="NONE";
 					id=155;
@@ -2784,7 +2784,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_3";
-					init="this allowDamage false;  this enableSimulation false;  this addAction[format[""%1 ($%2)"",[""license_civ_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !license_civ_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian '];";
+					init="this allowDamage false;  this enableSimulation false; this addAction[format[""%1 ($%2)"",[""license_civ_passport]""] call life_fnc_varToStr,[([""passport]""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""passport"",0,false,false,"""",' !license_civ_passport && playerSide == civilian '];  ";
 				};
 				class Item59
 				{
@@ -5861,7 +5861,7 @@ class Mission
 		};
 		class Item250
 		{
-			position[]={8281.8369,296.04001,2101.6985};
+			position[]={8282.2998,296.04001,2101.1697};
 			azimut=-210.93614;
 			id=453;
 			side="EMPTY";
@@ -41460,12 +41460,12 @@ class Mission
 		};
 		class Item116
 		{
-			position[]={539.0069,243.08934,2846.5688};
+			position[]={5952.1123,106.65358,7796.1045};
 			name="license_shop_2_1";
-			text="DMV";
+			text="Immigration";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=-359.20862;
+			angle=-359.20901;
 		};
 		class Item117
 		{
@@ -41780,7 +41780,7 @@ class Mission
 		};
 		class Item156
 		{
-			position[]={8281.7451,296.04001,2101.7566};
+			position[]={8282.208,296.04001,2101.2278};
 			name="atm_marker";
 			type="loc_Tourism";
 			colorName="ColorGreen";
