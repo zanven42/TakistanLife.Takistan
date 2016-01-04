@@ -485,9 +485,34 @@ switch(_shop) do
 						["CUP_30Rnd_762x39_AK47_M",nil,275],
 						["CUP_30Rnd_545x39_AK_M",nil,275],
 						["CUP_30Rnd_Sa58_M",nil,275],
+						["CUP_10x_303_M",nil,275],
 						["30Rnd_65x39_caseless_green",nil,275],
 						["30Rnd_556x45_Stanag",nil,275],
 						["30Rnd_65x39_caseless_mag",nil,275]
+					]
+				];
+			};
+		};
+	};
+	
+	case "black_market":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"You are not a civilian!"};
+			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			default
+			{
+				["Mohammed's Jihadi Shop",
+					[
+						["CUP_lmg_Pecheneg",nil,25000],
+						["CUP_lmg_PKM",nil,30000],
+						["CUP_arifle_RPK74",nil,50000],
+						["CUP_srifle_VSSVintorez",nil,20000],
+						["CUP_srifle_SVD",nil,3500],
+						["CUP_arifle_AKM",nil,3600],
+						["CUP_arifle_AKS74",nil,1000],
+						["CUP_arifle_AK107",nil,7500]
 					]
 				];
 			};

@@ -12,15 +12,6 @@ if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {
-	case "kart_shop":
-	{
-		_return = [
-			["C_Kart_01_Blu_F",15000],
-			["C_Kart_01_Fuel_F",15000],
-			["C_Kart_01_Red_F",15000],
-			["C_Kart_01_Vrana_F",15000]
-		];
-	};
 	case "med_shop":
 	{
 		_return = [
@@ -46,7 +37,16 @@ switch (_shop) do
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
 			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["CUP_C_Datsun",40000],
+			["C_Van_01_transport_F",40000],
+			["CUP_C_Datsun_4seat",40000],
+			["CUP_C_Datsun_Covered",40000],
+			["CUP_C_Datsun_Plain",40000],
+			["CUP_C_CUV_CIV",40000],
+			["CUP_C_LR_Transport_CTK",40000],
+			["CUP_C_SUV_TK",40000],
+			["CUP_C_UAZ_Unarmed_TK_CIV",40000],
+			["CUP_C_UAZ_Open_TK_CIV",40000]
 		];
 	};
 	
@@ -65,15 +65,13 @@ switch (_shop) do
 		];	
 	};
 	
-	
 	case "reb_car":
 	{
 		_return =
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",325000]
+			["O_MRAP_02_F",150000]
 		];
 		
 		if(license_civ_rebel) then
@@ -103,16 +101,47 @@ switch (_shop) do
 			["B_Heli_Light_01_F",253000],
 			["O_Heli_Light_02_unarmed_F",750000]
 		];
+		
+		if(license_civ_rebel) then {
+			_return = 
+			[
+				["B_Heli_Light_01_F",253000],
+				["O_Heli_Light_02_unarmed_F",750000],
+				["B_Heli_Light_01_armed_F",253000],
+				["O_Heli_Light_02_F",750000],
+				["CUP_O_Mi8_RU",750000],
+				["CUP_B_Mi17_CDF",750000],
+				["CUP_B_Mi35_CZ",750000],
+				["CUP_B_Mi171Sh_ACR",750000]
+			];
+		};
 	};
-	
+		
 	case "cop_air":
 	{
-		_return pushBack
-		["B_Heli_Light_01_F",75000];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return pushBack
-			["B_Heli_Transport_01_F",200000];
+		_return =
+		[
+			["CUP_B_UH1Y_UNA_USMC",253000],
+			["CUP_B_AW159_Unarmed_BAF",150000],
+			["CUP_Merlin_HC3",150000],
+			["CUP_B_UH60L_US",150000],
+			["CUP_B_UH60L_Unarmed_US",150000],
+			["B_Heli_Light_01_F",150000]
+			
+		];
+		
+		if(__GETC__(life_coplevel) > 8) then {
+			_return = 
+			[
+				["CUP_B_CH47F_GB",153000],
+				["CUP_B_UH1Y_GUNSHIP_USMC",150000],
+				["CUP_B_AW159_Armed_BAF",153000],
+				["O_Heli_Light_02_F",150000],
+				["CUP_B_C130J_USMC",150000],
+				["CUP_B_MV22_USMC",150000],
+				["CUP_B_CH47F_USA",150000],
+				["CUP_B_CH53E_USMC",150000]
+			];
 		};
 	};
 	
@@ -120,7 +149,7 @@ switch (_shop) do
 	{
 		_return pushBack
 		["B_Heli_Light_01_F",75000];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 8) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
@@ -137,15 +166,21 @@ switch (_shop) do
 			["C_Boat_Civil_01_F",22000]
 		];
 	};
-
-	case "cop_ship":
+	
+	case "reb_blk":
 	{
 		_return =
 		[
-			["B_Boat_Transport_01_F",3000],
-			["C_Boat_Civil_01_police_F",20000],
-			["B_Boat_Armed_01_minigun_F",75000],
-			["B_SDV_01_F",100000]
+			["B_Heli_Light_01_F",253000],
+			["O_Heli_Light_02_unarmed_F",750000],
+			["B_Heli_Light_01_F",253000],
+			["O_Heli_Light_02_unarmed_F",750000],
+			["B_Heli_Light_01_armed_F",253000],
+			["O_Heli_Light_02_F",750000],
+			["CUP_O_Mi8_RU",750000],
+			["CUP_B_Mi17_CDF",750000],
+			["CUP_B_Mi35_CZ",750000],
+			["CUP_B_Mi171Sh_ACR",750000]
 		];
 	};
 };

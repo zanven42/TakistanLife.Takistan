@@ -18,7 +18,7 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","TPF Rasman LAC",""]
+			["cop_spawn_3","TPF Rasman LAC",""]
 		];
 		
 		if(__GETC__(life_coplevel) > 8) then {
