@@ -125,6 +125,8 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		//New Shit
+		class suicideBomb {};
 	};
 	
 	class Housing
