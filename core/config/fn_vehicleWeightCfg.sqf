@@ -10,6 +10,78 @@ _className = [_this,0,"",[""]] call BIS_fnc_param;
 
 switch (_className) do
 {
+	
+	case "CUP_C_Datsun": {50}; //Civ Car
+	case "CUP_C_Datsun_4seat": {50}; //Civ Car
+	case "CUP_C_Datsun_Covered": {50}; //Civ Car
+	case "CUP_C_Datsun_Plain": {50}; //Civ Car
+	case "CUP_C_LR_Transport_CTK": {80}; //Civ Car
+	case "CUP_C_SUV_TK": {80}; //Civ Car
+	case "CUP_C_UAZ_Unarmed_TK_CIV": {50}; //Civ Car
+	case "RDS_Lada_Civ_02": {30}; //Civ Car
+	case "RDS_Gaz24_Civ_03": {30}; //Civ Car
+	case "RDS_Gaz24_Civ_01": {30}; //Civ Car 
+	case "RDS_Gaz24_Civ_02": {30}; //Civ Car
+	case "RDS_Golf4_Civ_01": {30}; //Civ Car
+	case "RDS_S1203_Civ_01": {30}; //Civ Car
+	case "RDS_Octavia_Civ_01": {30}; //Civ Car
+	case "RDS_Lada_Civ_04": {30}; //Civ Car
+	case "RDS_Lada_Civ_01": {30}; //Civ Car
+	case "RDS_Lada_Civ_02": {30}; //Civ Car
+	case "RDS_S1203_Civ_01": {30}; //Civ Car 			
+	case "CUP_C_Ural_Open_Civ_02": {260}; //Civ Truck 
+	case "CUP_C_Ural_Civ_02": {265}; //Civ Truck 
+	case "CUP_C_Ural_Open_Civ_03": {260}; //Civ Truck 
+	case "CUP_C_Ural_Civ_03": {265}; //Civ Truck 
+	case "CUP_C_Ural_Open_Civ_01": {260}; //Civ Truck 
+	case "B_Truck_01_covered_F": {350}; //Civ Truck 			
+	case "I_G_Offroad_01_F": {65}; //Terrorist Car
+	case "O_G_Offroad_01_F": {65}; //Terrorist Car
+	case "CUP_I_Datsun_PK": {50}; //Terrorist Car
+	case "CUP_B_M1030": {5}; //Terrorist Car
+	case "O_G_Offroad_01_armed_F": {50}; //Terrorist Car
+	case "CUP_D_UAZ_MG_CHDKZ": {50}; //Terrorist Car
+	case "CUP_B_LR_MG_GB_W": {65}; //Terrorist Car
+	case "CUP_O_Ural_Open_CHDKZ": {125}; //Terrorist Car
+	case "CUP_O_Ural_CHDKZ": {150}; //Terrorist Car
+	case "RDS_Lada_Civ_05": {65}; //TPF Car
+	case "CUP_C_SUV_CIV": {65}; //TPF Car
+	case "CUP_B_HMMWV_Unarmed_USA": {65}; //TPF Car
+	case "CUP_B_HMMWV_Transport_USA": {65}; //TPF Car
+	case "CUP_I_SUV_Armored_ION": {65}; //TPF Car
+	case "CUP_B_LR_Transport_GB_D": {65}; //TPF Car
+	case "CUP_B_Dingo_Des": {65}; //TPF Car
+	case "CUP_B_HMMWV_M2_GPK_ACR": {65}; //NATO Car
+	case "CUP_BAF_Jackal2_L2A1_D": {65}; //NATO Car
+	case "CUP_O_Ural_SLA": {150}; //NATO Car
+	case "CUP_B_M2A3Bradley_USA_D": {65}; //NATO Car
+	case "CUP_B_M1A2_TUSK_MG_DES_US_Army": {65}; //NATO Car
+	case "CUP_B_BRDM2_HQ_CDF": {65}; //NATO Car
+	case "O_Heli_Transport_04_black_F": {65}; //Civ Heli
+	case "O_Heli_Transport_04_box_F": {100}; //Civ Heli
+	case "CUP_C_Mi17_Civilian_RU": {200}; //Civ Heli
+	case "B_Heli_Transport_03_unarmed_F": {200}; //Civ Heli
+	case "CUP_Merlin_HC3": {325}; //Civ Heli
+	case "CUP_C_MI6A_RU": {800}; //Civ Heli
+	case "CUP_C_DC3_CIV": {325}; //Civ Heli
+	case "B_Heli_Light_01_stripped_F": {25}; //Police Heli
+	case "CUP_B_AW159_Unarmed_BAF": {25}; //Police Heli
+	case "CUP_B_UH1Y_UNA_F": {25}; //Police Heli
+	case "CUP_B_UH1Y_GUNSHIP_F": {25}; //Police Heli
+	case "CUP_B_C130J_USMC": {25}; //Police Heli
+	case "CUP_B_MH60S_FFV_USMC": {25}; //Police Heli
+	case "CUP_B_MV22_USMC": {25}; //Police Heli
+	case "CUP_B_CH53E_USMC": {25}; //Police Heli
+	case "C_Heli_light_01_ion_F": {25}; //Police Heli
+	case "B_Heli_Light_01_armed_F": {10}; //Blackmarket
+	case "CUP_B_Mi17_CDF": {10}; //Blackmarket
+	case "D_Heli_Light_02_F": {10}; //Blackmarket
+	case "CUP_O_Mi24_P_RU": {10}; //Blackmarket
+	case "CUP_O_BMP2_CHDKZ": {10}; //Blackmarket
+	case "CUP_O_BRDM2_CHDKZ": {10}; //Blackmarket
+	case "CUP_O_T72_CHDKZ": {10}; //Blackmarket
+	case "CUP_O_Ural_ZU23_CHDKZ": {10}; //Blackmarket
+	case "CUP_O_BRDM2_HQ_CHDKZ": {10}; //Blackmarket
 	case "C_Offroad_01_F": {65};
 	case "B_G_Offroad_01_F": {65};
 	case "B_Quadbike_01_F": {25};

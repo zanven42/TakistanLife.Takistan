@@ -2942,7 +2942,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init=" removeallWeapons this;    this enableSimulation false;   this allowDamage false;   this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""];   this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];    this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[""Terrorist Weapon Addons"",life_fnc_weaponShopMenu,""addons"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];    this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; ";
 				};
 				class Item75
 				{

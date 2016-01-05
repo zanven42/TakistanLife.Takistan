@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Takistan Life v3.1.4.8";
+onLoadName = "Takistan Life v1.0";
 onLoadMission = "developed by Tonic, Modded by Empire Gaming";
 joinUnassigned = 1;
 respawn = BASE;
