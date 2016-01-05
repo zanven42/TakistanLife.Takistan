@@ -4,12 +4,12 @@ Empire Gaming Current to-do list
 Can't do much more until I get the idea of what you want. Will talk to you tomorrow ~BongLord
 
 
-*suicide vest [DONE]
-*edit slot desiction names [DONE]
-*remove weapon addons from terrorist vendor [DONE]
-*fix the bank [Cant do it till I get the building class name I also goto add the cameras if you want them?]
-*make TPF/NATO only sell there own vehicles
-*pirce all items/vehicles  
+* suicide vest [DONE]
+* edit slot desiction names [DONE]
+* remove weapon addons from terrorist vendor [DONE]
+* fix the bank [Cant do it till I get the building class name I also goto add the cameras if you want them?]
+* make TPF/NATO only sell there own vehicles
+* pirce all items/vehicles  
 * Add Terroist Weapons
 * Add Cop Uniforms
 * Medic Uniforms
@@ -19,8 +19,8 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * Medic/Civ/Cop Vehicles
 * Map Editing.
 
-DGetting Started Guide. For Any Future Developers <3 BongLord
-
+Getting Started Guide. For Any Future Developers <3 BongLord
+=============
 PBO Manager: http://www.armaholic.com/page.php?id=16369
 
 Setting up a local dedi server on ur pc. for testing.
