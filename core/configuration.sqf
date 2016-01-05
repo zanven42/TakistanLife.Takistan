@@ -33,6 +33,7 @@ life_action_gathering = false;
 life_god = false; //Add this
 life_frozen = false; //And this
 life_markers = false; //Finally this
+life_fadeSound = false; //Ear Pugs Defalt Is false. PS Tom Is Annoying Me
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?

@@ -25,7 +25,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Official Change Log",
 				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
+					The official change log can be found on wwwmutinygamingau.com/forum
 				"
 		]
 	];
@@ -34,7 +34,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Custom Change Log",
 				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.
+					Full change log available on our forums.
 				"
 		]
 	];
@@ -192,7 +192,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["serverrules",
 		[
-			"Don't Be A Dick!", 
+			"Don't Be A DickHead!", 
 				"
 				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
 				Causing others grief, disrupting roleplay, the list goes on.<br/>
@@ -558,6 +558,7 @@ player createDiarySubject ["controls","Controls"];
 				Left Windows: Main Interaction key which is used for picking up items/money, gathering, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
 				Left Shift + L: Activates cop siren lights (as a cop).<br/>
 				Left Shift + H: Holster's your pistol<br/>
+				Left Shift + P: Activates Ear Plugs<br/>
 				"
 		]
 	];

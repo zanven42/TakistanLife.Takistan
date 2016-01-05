@@ -238,6 +238,8 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		//New Shit. Lets Keep This Clean.
+		class fadeSound {};
 	};
 	
 	class Network
