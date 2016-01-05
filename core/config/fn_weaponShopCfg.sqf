@@ -534,12 +534,7 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_green",nil,125],
 						["30Rnd_556x45_Stanag",nil,275],
 						["30Rnd_65x39_caseless_mag",nil,125],
-						["CUP_18Rnd_9x19_Phantom",nil,125],
-						["CUP_optic_Kobra",nil,125],
-						["CUP_optic_PSO_1",nil,125],
-						["optic_Arco",nil,125],
-						["optic_MRCO",nil,125],
-						["optic_DMS",nil,125]
+						["CUP_18Rnd_9x19_Phantom",nil,125]
 					]
 				];
 			};
