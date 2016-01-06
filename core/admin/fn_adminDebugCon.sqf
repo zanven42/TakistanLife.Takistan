@@ -6,7 +6,6 @@
 	Description:
 	Opens the Debug Console.
 */
-format["Admin %1 has opened the Debug Console.",profileName]]
 if(__GETC__(life_adminlevel) < 5) exitWith {closeDialog 0; hint "You have no business using this";};
 
 createDialog "RscDisplayDebugPublic";
