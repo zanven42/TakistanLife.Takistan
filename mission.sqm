@@ -2009,7 +2009,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="removeallweapons this; removeGoggles this; removeHeadgear this; removeVest this; removeUniform this; removeAllAssignedItems this; this allowDamage false; this enableSimulation false; this addgoggles ""CUP_TK_NeckScarf""; this addheadgear ""CUP_H_TK_Lungee""; this adduniform ""rds_uniform_citizen4""; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false;  this enableSimulation false;  this addGoggles ""CUP_TK_NeckScarf"";   this addHeadgear ""CUP_H_TK_Lungee"";  this addUniform ""rds_uniform_citizen4"";  this addAction[""Market"",life_fnc_virt_menu,""market""];";
 					syncId=0;
 					synchronizations[]={1};
 				};

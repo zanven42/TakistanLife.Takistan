@@ -2,7 +2,7 @@
 /*
 	File: fn_clothing_cop.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master config file for Cop clothing store.
 */
@@ -27,29 +27,29 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,550];
+			_ret pushBack ["rds_uniform_Policeman",nil,550];
 		};
 	};
-	
+
 	//Hats
 	case 1:
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["H_HelmetB_plain_mcamo",nil,75];
+			_ret pushBack ["rds_police_cap",nil,75];
 			_ret pushBack ["H_Booniehat_mcamo",nil,120];
 		};
-		
+
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret pushBack ["H_MilCap_mcamo",nil,100];
 		};
 	};
-	
+
 	//Glasses
 	case 2:
 	{
-		_ret = 
+		_ret =
 		[
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -63,17 +63,17 @@ switch (_filter) do
 			["G_Combat",nil,55]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
 		_ret pushBack ["V_Rangemaster_belt",nil,800];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["V_PlateCarrier2_rgr",nil,1500];
+			_ret pushBack ["CUP_V_O_TK_OfficerBelt2",nil,1500];
 		};
 	};
-	
+
 	//Backpacks
 	case 4:
 	{
