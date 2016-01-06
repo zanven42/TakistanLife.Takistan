@@ -104,7 +104,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #16";
+					description="TPF Slot #1";
 				};
 				class Item1
 				{
@@ -117,7 +117,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #17";
+					description="TPF Slot #2";
 				};
 				class Item2
 				{
@@ -130,7 +130,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #18";
+					description="TPF Slot #3";
 				};
 				class Item3
 				{
@@ -143,7 +143,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #13";
+					description="NATO Slot #4";
 				};
 				class Item4
 				{
@@ -169,7 +169,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #11";
+					description="NATO Slot #2";
 				};
 				class Item6
 				{
@@ -195,7 +195,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #12";
+					description="NATO Slot #3";
 				};
 				class Item8
 				{
@@ -208,7 +208,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #14";
+					description="NATO Slot #5";
 				};
 				class Item9
 				{
@@ -235,7 +235,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_15";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #15";
+					description="NATO Slot #6";
 				};
 				class Item11
 				{
@@ -300,7 +300,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #3";
+					description="TPF Slot #7";
 				};
 				class Item16
 				{
@@ -326,7 +326,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #10";
+					description="NATO Slot #1";
 				};
 				class Item18
 				{
@@ -39585,7 +39585,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={6077.6382,82.942001,11496.042};
+			position[]={6099.5337,82.906052,11491.539};
 			name="cop_spawn_1";
 			type="Empty";
 			angle=-49.617973;
@@ -40257,10 +40257,10 @@ class Mission
 		};
 		class Item92
 		{
-			position[]={6062.9829,83.010384,11502.324};
+			position[]={6084.0996,82.939972,11495.831};
 			name="cop_car_1";
 			type="Empty";
-			angle=-400.27084;
+			angle=-441.86224;
 		};
 		class Item93
 		{
