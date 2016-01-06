@@ -541,7 +541,7 @@ switch(_shop) do
 		};
 	};
 
-	case "reb_blk":
+	case "black_market":
 	{
 		switch(true) do
 		{
