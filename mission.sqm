@@ -2089,7 +2089,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1";
-					init=" removeallWeapons this;     this enableSimulation false;      this allowDamage false;      this addAction[""Terrorist Vehicle Shop"",life_fnc_vehicleShopMenu,[""black_market"",civilian,[""blk_trader_1"",""blk_trader_2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];      this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  ";
+					init=" removeallWeapons this;     this enableSimulation false;      this allowDamage false;      this addAction[""Terrorist Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_blk"",civilian,[""blk_trader_1"",""blk_trader_2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];      this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  ";
 				};
 				class Item2
 				{
