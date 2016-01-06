@@ -1,7 +1,7 @@
 /*
 	File: fn_clothingFilter.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Functionality for filtering clothing types in the menu.
 */
@@ -32,7 +32,7 @@ lbClear _list;
 //Temp code, subjected to become one master config in future
 _clothes = switch (life_clothing_store) do
 {
-	case "barber": {[_selection] call life_fnc_clothing_bruce;};
+	case "barber": {[_selection] call life_fnc_clothing_barber;};
 	case "bruce": {[_selection] call life_fnc_clothing_bruce;};
 	case "cop": {[_selection] call life_fnc_clothing_cop;};
 	case "reb": {[_selection] call life_fnc_clothing_reb;};
