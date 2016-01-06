@@ -104,7 +104,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #1";
+					description="Cop Slot #1";
 				};
 				class Item1
 				{
@@ -117,7 +117,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #2";
+					description="Cop Slot #2";
 				};
 				class Item2
 				{
@@ -130,7 +130,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #3";
+					description="Cop Slot #3";
 				};
 				class Item3
 				{
@@ -143,7 +143,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #4";
+					description="Cop Slot #4";
 				};
 				class Item4
 				{
@@ -156,7 +156,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_6";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #5";
+					description="Cop Slot #5";
 				};
 				class Item5
 				{
@@ -169,7 +169,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #6";
+					description="Cop Slot #6";
 				};
 				class Item6
 				{
@@ -182,7 +182,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_7";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #7";
+					description="Cop Slot #7";
 				};
 				class Item7
 				{
@@ -195,7 +195,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #8";
+					description="Cop Slot #8";
 				};
 				class Item8
 				{
@@ -208,7 +208,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #9";
+					description="Cop Slot #9";
 				};
 				class Item9
 				{
@@ -222,7 +222,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_19";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #10";
+					description="Cop Slot #10";
 				};
 				class Item10
 				{
