@@ -357,8 +357,8 @@ switch(_shop) do
 							["CUP_optic_Kobra",nil,125],
 							["CUP_optic_PSO_1",nil,125],
 							["CUP_optic_PechenegScope",nil,125],
-							["CUP_optic_CompM2_Desert","TearGas",50],
-							["CUP_optic_SB_3_12x50_PMII","TearGas",50]
+							["CUP_optic_CompM2_Desert",nil,50],
+							["CUP_optic_SB_3_12x50_PMII",nil,50]
 							
 					]
 				];
@@ -385,8 +385,8 @@ switch(_shop) do
 							["CUP_optic_Kobra",nil,125],
 							["CUP_optic_PSO_1",nil,125],
 							["CUP_optic_PechenegScope",nil,125],
-							["CUP_optic_CompM2_Desert","TearGas",50],
-							["CUP_optic_SB_3_12x50_PMII","TearGas",50]
+							["CUP_optic_CompM2_Desert",nil,50],
+							["CUP_optic_SB_3_12x50_PMII",nil,50]
 					]
 				];
 			};
@@ -417,8 +417,8 @@ switch(_shop) do
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
 							["SmokeShellBlue","TearGas",50],
-							["CUP_optic_CompM2_Desert","TearGas",50],
-							["CUP_optic_SB_3_12x50_PMII","TearGas",50]
+							["CUP_optic_CompM2_Desert",nil,50],
+							["CUP_optic_SB_3_12x50_PMII",nil,50]
 
 					]
 				];
@@ -452,9 +452,9 @@ switch(_shop) do
 							["CUP_M136_M",nil,5000],
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
-							["SmokeShellBlue","TearGas",50],
-							["CUP_optic_CompM2_Desert","TearGas",50],
-							["CUP_optic_SB_3_12x50_PMII","TearGas",50]
+							["SmokeShellBlue",nil,50],
+							["CUP_optic_CompM2_Desert",nil,50],
+							["CUP_optic_SB_3_12x50_PMII",nil,50]
 					]
 				];
 			};
@@ -489,8 +489,8 @@ switch(_shop) do
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
 							["SmokeShellBlue","TearGas",50],
-							["CUP_optic_CompM2_Desert","TearGas",50],
-							["CUP_optic_SB_3_12x50_PMII","TearGas",50]
+							["CUP_optic_CompM2_Desert",nil,50],
+							["CUP_optic_SB_3_12x50_PMII",nil,50]
 					]
 				];
 			};

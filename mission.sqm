@@ -104,7 +104,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #1";
+					description="NATO Slot #16";
 				};
 				class Item1
 				{
@@ -117,7 +117,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #2";
+					description="NATO Slot #17";
 				};
 				class Item2
 				{
@@ -130,7 +130,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #3";
+					description="NATO Slot #18";
 				};
 				class Item3
 				{
@@ -143,7 +143,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #4";
+					description="NATO Slot #13";
 				};
 				class Item4
 				{
@@ -156,7 +156,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_6";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #5";
+					description="TPF Slot #6";
 				};
 				class Item5
 				{
@@ -169,7 +169,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #6";
+					description="NATO Slot #11";
 				};
 				class Item6
 				{
@@ -182,7 +182,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_7";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #7";
+					description="TPF Slot #7";
 				};
 				class Item7
 				{
@@ -195,7 +195,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #8";
+					description="NATO Slot #12";
 				};
 				class Item8
 				{
@@ -208,7 +208,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #9";
+					description="NATO Slot #14";
 				};
 				class Item9
 				{
@@ -222,7 +222,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_19";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="NATO Slot #10";
+					description="NATO Slot #19";
 				};
 				class Item10
 				{
@@ -235,7 +235,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_15";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #11";
+					description="NATO Slot #15";
 				};
 				class Item11
 				{
@@ -248,7 +248,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_9";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #12";
+					description="TPF Slot #9";
 				};
 				class Item12
 				{
@@ -261,7 +261,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_8";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #13";
+					description="TPF Slot #8";
 				};
 				class Item13
 				{
@@ -274,7 +274,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #14";
+					description="TPF Slot #4";
 				};
 				class Item14
 				{
@@ -287,7 +287,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #15";
+					description="TPF Slot #2";
 				};
 				class Item15
 				{
@@ -300,7 +300,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #16";
+					description="TPF Slot #3";
 				};
 				class Item16
 				{
@@ -313,7 +313,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #17";
+					description="TPF Slot #5";
 				};
 				class Item17
 				{
@@ -326,7 +326,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #18";
+					description="NATO Slot #10";
 				};
 				class Item18
 				{
@@ -340,7 +340,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="TPF Slot #19";
+					description="TPF Slot #1";
 				};
 			};
 		};
@@ -1791,7 +1791,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Civ 66";
+					description="Civ 70";
 				};
 			};
 		};
@@ -1813,7 +1813,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Civ 67";
+					description="Civ 69";
 				};
 			};
 		};
@@ -1857,7 +1857,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Civ 69";
+					description="Civ 67";
 				};
 			};
 		};
@@ -1879,7 +1879,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Civ 70";
+					description="Civ 66";
 				};
 			};
 		};
@@ -1901,7 +1901,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_75";
-					description="Civ 71";
+					description="Civ 75";
 				};
 			};
 		};
@@ -1923,7 +1923,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_74";
-					description="Civ 72";
+					description="Civ 74";
 				};
 			};
 		};
@@ -1967,7 +1967,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_72";
-					description="ADMIN SLOT";
+					description="Civ 72";
 				};
 			};
 		};
@@ -1989,7 +1989,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_71";
-					description="ADMIN SLOT";
+					description="Civ 71";
 				};
 			};
 		};
@@ -2942,7 +2942,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init=" removeallWeapons this;    this enableSimulation false;   this allowDamage false;   this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""];   this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];    this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[""Terrorist Weapon Addons"",life_fnc_weaponShopMenu,""addons"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];    this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+					init="removeallWeapons this;   this enableSimulation false;  this allowDamage false;   this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""];   this addAction[""Terrorist Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];   this addAction[""Terrorist Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];    this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
 				};
 				class Item75
 				{
@@ -3427,7 +3427,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init=" this enableSimulation false;   this allowDamage false;    this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;    life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];     life_garage_sp = ""air_garage"";  }];    this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init=" this enableSimulation false;   this allowDamage false;    this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;    life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];     life_garage_sp = ""air_garage1"";  }];    this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					syncId=6;
 					synchronizations[]={1};
 				};
@@ -3436,7 +3436,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3608;
+		items=3609;
 		class Item0
 		{
 			position[]={6905.0098,56.439846,11355.115};
@@ -39515,6 +39515,16 @@ class Mission
 			skill=0.60000002;
 			text="air_sp_2";
 		};
+		class Item3608
+		{
+			position[]={6577.7388,62.270683,11387.8};
+			azimut=-223.99068;
+			id=3815;
+			side="EMPTY";
+			vehicle="Land_HelipadRescue_F";
+			skill=0.60000002;
+			text="med_heli";
+		};
 	};
 	class Markers
 	{
@@ -40893,10 +40903,10 @@ class Mission
 		};
 		class Item174
 		{
-			position[]={6577.7974,62.286156,11390.188};
+			position[]={6591.6704,62.26408,11379.803};
 			name="med_car_3";
 			type="Empty";
-			angle=-218.45688;
+			angle=-134.3886;
 		};
 		class Item175
 		{
@@ -41103,7 +41113,7 @@ class Mission
 		};
 		class Item197
 		{
-			position[]={6572.7651,62.249489,11386.976};
+			position[]={6577.3569,62.264179,11386.976};
 			name="med_heli";
 			type="Empty";
 		};
@@ -41207,7 +41217,7 @@ class Mission
 			name="civ_gar_1_2_1_1";
 			text="Air Garage";
 			type="o_service";
-			angle=-540.29523;
+			angle=-540.29498;
 		};
 		class Item211
 		{
