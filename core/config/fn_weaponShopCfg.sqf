@@ -2,13 +2,13 @@
 /*
 	File: fn_weaponShopCfg.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration file for the weapon shops.
-	
+
 	Return:
 	String: Close the menu
-	Array: 
+	Array:
 	[Shop Name,
 	[ //Array of items to add to the store
 		[classname,Custom Name (set nil for default),price]
@@ -42,7 +42,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "nato_equipment":
 	{
 		switch(true) do
@@ -65,10 +65,10 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "med_basic":
 	{
-		switch (true) do 
+		switch (true) do
 		{
 			case (playerSide != independent): {"You are not an EMS Medic"};
 			default {
@@ -107,7 +107,7 @@ switch(_shop) do
 							["CUP_optic_MRad",nil,500],
 							["CUP_optic_Eotech533Grey",nil,125],
 							["CUP_optic_LeupoldMk4_10x40_LRT_Woodland",nil,125]
-							
+
 					]
 				];
 			};
@@ -359,7 +359,7 @@ switch(_shop) do
 							["CUP_optic_PechenegScope",nil,125],
 							["CUP_optic_CompM2_Desert",nil,50],
 							["CUP_optic_SB_3_12x50_PMII",nil,50]
-							
+
 					]
 				];
 			};
@@ -410,9 +410,9 @@ switch(_shop) do
 							["CUP_30Rnd_556x45_Stanag",nil,125],
 							["150Rnd_93x64_Mag",nil,125],
 							["CUP_5Rnd_762x51_M24",nil,125],
-							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125], 
-							["CUP_20Rnd_762x51_CZ805B",nil,125], 
-							["CUP_20Rnd_762x51_DMR",nil,125], 
+							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125],
+							["CUP_20Rnd_762x51_CZ805B",nil,125],
+							["CUP_20Rnd_762x51_DMR",nil,125],
 							["CUP_M136_M",nil,5000],
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
@@ -445,10 +445,10 @@ switch(_shop) do
 							["CUP_30Rnd_556x45_Stanag",nil,125],
 							["150Rnd_93x64_Mag",nil,125],
 							["CUP_5Rnd_762x51_M24",nil,125],
-							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125], 
-							["CUP_20Rnd_762x51_CZ805B",nil,125], 
-							["CUP_20Rnd_762x51_DMR",nil,125], 
-							["CUP_5Rnd_86x70_L115A1",nil,125], 
+							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125],
+							["CUP_20Rnd_762x51_CZ805B",nil,125],
+							["CUP_20Rnd_762x51_DMR",nil,125],
+							["CUP_5Rnd_86x70_L115A1",nil,125],
 							["CUP_M136_M",nil,5000],
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
@@ -481,10 +481,10 @@ switch(_shop) do
 							["CUP_30Rnd_556x45_Stanag",nil,125],
 							["150Rnd_93x64_Mag",nil,125],
 							["CUP_5Rnd_762x51_M24",nil,125],
-							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125], 
-							["CUP_20Rnd_762x51_CZ805B",nil,125], 
-							["CUP_20Rnd_762x51_DMR",nil,125], 
-							["CUP_5Rnd_86x70_L115A1",nil,125], 
+							["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,125],
+							["CUP_20Rnd_762x51_CZ805B",nil,125],
+							["CUP_20Rnd_762x51_DMR",nil,125],
+							["CUP_5Rnd_86x70_L115A1",nil,125],
 							["CUP_M136_M",nil,5000],
 							["CUP_Stinger_M",nil,5000],
 							["HandGrenade_Stone","Flashbang",50],
@@ -496,7 +496,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "rebel":
 	{
 		switch(true) do
@@ -507,10 +507,10 @@ switch(_shop) do
 			{
 				["Mohammed's Jihadi Shop",
 					[
-						["CUP_lmg_Pecheneg",nil,75000], 
+						["CUP_lmg_Pecheneg",nil,75000],
 						["CUP_lmg_PKM",nil,75000],
 						["CUP_arifle_RPK74",nil,75000],
-						["CUP_srifle_VSSVintorez",nil,100000], 
+						["CUP_srifle_VSSVintorez",nil,100000],
 						["CUP_srifle_SVD",nil,125000],
 						["CUP_arifle_AKM",nil,70000],
 						["CUP_arifle_AKS74",nil,50000],
@@ -540,7 +540,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "black_market":
 	{
 		switch(true) do
@@ -557,6 +557,7 @@ switch(_shop) do
 						["CUP_glaunch_Mk13",nil,450000],
 						["CUP_glaunch_M32",nil,450000],
 						["CUP_srifle_M110",nil,250000],
+						["V_HarnessOGL_brn",nil,1200000],
 						["CUP_lmg_Mk48_wdl_Aim_Laser",nil,300000],
 						["CUP_lmg_Mk48_des_Aim_Laser",nil,300000],
 						["CUP_6Rnd_HE_M203",nil,80000],
@@ -565,13 +566,13 @@ switch(_shop) do
 						["CUP_PG7V_M",nil,50000],
 						["CUP_RPG18_M",nil,50000],
 						["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,3000],
-						["CUP_20Rnd_762x51_B_M110",nil,3000]			
+						["CUP_20Rnd_762x51_B_M110",nil,3000]
 					]
 				];
 			};
 		};
 	};
-	
+
 	case "gun":
 	{
 		switch(true) do
@@ -604,7 +605,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "gang":
 	{
 		switch(true) do
@@ -629,7 +630,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "genstore":
 	{
 		["Altis General Store",

@@ -2009,7 +2009,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+					init="removeallweapons this; removeGoggles this; removeHeadgear this; removeVest this; removeUniform this; removeAllAssignedItems this; this allowDamage false; this enableSimulation false; this addgoggles ""CUP_TK_NeckScarf""; this addheadgear ""CUP_H_TK_Lungee""; this adduniform ""rds_uniform_citizen4""; this addAction[""Market"",life_fnc_virt_menu,""market""];";
 					syncId=0;
 					synchronizations[]={1};
 				};
@@ -3441,7 +3441,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6244.5771,59.830158,11192.149};
+					position[]={6251.7251,59.709625,11203.452};
 					azimut=-243.53893;
 					special="NONE";
 					id=207;
@@ -39870,7 +39870,7 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={2604.938,-0.011716768,6162.3164};
+			position[]={1383.7482,264.21698,5989.8281};
 			name="peaches_2";
 			text="Peaches Field";
 			type="loc_Tree";
@@ -41250,7 +41250,7 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={6244.7944,59.828018,11192.33};
+			position[]={6251.9424,59.707832,11203.633};
 			name="Gen_3_2";
 			text="Apu's Barber Shop";
 			type="c_unknown";
