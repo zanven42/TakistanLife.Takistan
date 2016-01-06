@@ -10,14 +10,15 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * fix the bank [Cant do it till I get the building class name I also goto add the cameras if you want them?]
 * make TPF/NATO only sell there own vehicles
 * pirce all items/vehicles  
-* Add Terroist Weapons
+* Add Terroist Weapons [DONE]
 * Add Cop Uniforms
 * Medic Uniforms
 * Terrirost Uniforms
 * Civilian Uniforms
-* Add Legal Gunstore Weapons
-* Medic/Civ/Cop Vehicles
+* Add Legal Gunstore Weapons [DONE]
+* Medic/Civ/Cop Vehicles [DONE]
 * Map Editing.
+* Fix placment of random ATMs around map.
 
 Getting Started Guide. For Any Future Developers <3 BongLord
 =============
