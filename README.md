@@ -20,6 +20,7 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * Medic/Civ/Cop Vehicles [DONE]
 * Map Editing.
 * Fix placment of random ATMs around map.
+* Surender Action
 
 Getting Started Guide. For Any Future Developers <3 BongLord
 =============
