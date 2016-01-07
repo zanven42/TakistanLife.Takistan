@@ -68,6 +68,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["TRYK_V_Sheriff_BA_OD",nil,350];
+			_ret pushBack ["TRYK_V_tacv10LC_OD",nil,350];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
