@@ -3397,7 +3397,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3696;
+		items=3697;
 		class Item0
 		{
 			position[]={6905.0098,56.439846,11355.115};
@@ -5884,7 +5884,7 @@ class Mission
 		};
 		class Item249
 		{
-			position[]={5655.8418,81.919342,8892.2871};
+			position[]={5655.8418,81.919342,8891.416};
 			azimut=-99.315201;
 			offsetY=0.2;
 			id=451;
@@ -40350,6 +40350,16 @@ class Mission
 			vehicle="Land_HBarrier_large";
 			skill=0.60000002;
 		};
+		class Item3696
+		{
+			position[]={5654.23,81.916771,8893.2695};
+			azimut=80.975304;
+			offsetY=0.61965197;
+			id=3898;
+			side="EMPTY";
+			vehicle="Land_Cargo_House_V3_F";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
@@ -41969,6 +41979,30 @@ class Mission
 			text="Apu's Barber Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="call cba_common_fnc_monitorFrameRender";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
+			class Effects
+			{
+			};
 		};
 	};
 };
