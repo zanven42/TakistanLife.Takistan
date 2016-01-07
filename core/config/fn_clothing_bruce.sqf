@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_bruce.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
@@ -10,7 +10,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Bruce's Outback Outfits"];
+ctrlSetText[3103,"Muhammad's Outfits"];
 
 switch (_filter) do
 {
@@ -32,9 +32,44 @@ switch (_filter) do
 		["U_C_WorkerCoveralls","Mechanic Coveralls",2500],
 		["U_OrestesBody","Surfing On Land",1100],
 		["U_NikosAgedBody","Casual Wears",5000]
+		["rds_uniform_assistant","Poloshirt Blue",250],
+		["rds_uniform_citizen1","Poloshirt Burgundy",275],
+		["rds_uniform_citizen2","Poloshirt Red/White",150],
+		["rds_uniform_citizen3","Poloshirt Salmon",175],
+		["rds_uniform_citizen4","Poloshirt stripped",125],
+		["rds_uniform_doctor","Poloshirt Tricolor",350],
+		["rds_uniform_Functionary1","Rag tagged clothes",250],
+		["rds_uniform_Functionary2","Green stripped shirt & Pants",650],
+		["U_C_HunterBody_grn","Brown Jacket & Pants",735],
+		["U_C_Journalist","The Outback Rangler",1200],
+		["rds_uniform_priest","The Hunters Look",1500],
+		["rds_uniform_Profiteer1","Mechanic Coveralls",2500],
+		["rds_uniform_Profiteer2","Surfing On Land",1100],
+		["rds_uniform_Profiteer3","Casual Wears",5000]
+		["rds_uniform_Profiteer4","Casual Wears",5000]
+		["rds_uniform_schoolteacher","Casual Wears",5000]
+		["TRYK_SUITS_BLK_F","Casual Wears",5000],
+		["TRYK_SUITS_BR_F","Casual Wears",5000],
+		["rds_uniform_Villager1","Casual Wears",5000],
+		["rds_uniform_Villager2","Casual Wears",5000],
+		["rds_uniform_Villager3","Casual Wears",5000],
+		["rds_uniform_Villager4","Casual Wears",5000],
+		["rds_uniform_Woodlander1","Casual Wears",5000],
+		["rds_uniform_Villager1","Casual Wears",5000],
+		["rds_uniform_Villager2","Casual Wears",5000],
+		["rds_uniform_Villager3","Casual Wears",5000],
+		["rds_uniform_Villager4","Casual Wears",5000],
+		["rds_uniform_Woodlander1","Casual Wears",5000],
+		["rds_uniform_Woodlander2","Casual Wears",5000],
+		["rds_uniform_Woodlander3","Casual Wears",5000],
+		["rds_uniform_Woodlander4","Casual Wears",5000],
+		["rds_uniform_Worker1","Casual Wears",5000],
+		["rds_uniform_Worker2","Casual Wears",5000],
+		["rds_uniform_Worker3","Casual Wears",5000],
+		["rds_uniform_Worker4","Casual Wears",5000]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -59,10 +94,25 @@ switch (_filter) do
 			["H_Cap_grn_BI",nil,150],
 			["H_Cap_oli",nil,150],
 			["H_Cap_red",nil,150],
-			["H_Cap_tan",nil,150]
+			["H_Cap_tan",nil,150],
+			["rds_worker_cap4",nil,276],
+			["rds_worker_cap3",nil,340],
+			["rds_worker_cap2",nil,280],
+			["rds_Villager_cap4",nil,265],
+			["rds_Villager_cap3",nil,150],
+			["rds_Villager_cap2",nil,150],
+			["rds_Villager_cap1",nil,150],
+			["TRYK_H_pakol",nil,150],
+			["TRYK_H_pakol2",nil,150],
+			["CUP_H_USMC_Officer_Cap",nil,276],
+			["CUP_H_FR_BandanaGreen",nil,340],
+			["rds_Profiteer_cap2",nil,280],
+			["rds_Profiteer_cap1",nil,265],
+			["rds_Profiteer_cap3",nil,150],
+			["rds_Profiteer_cap4",nil,150]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -80,16 +130,27 @@ switch (_filter) do
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55]
+			["TRYK_Shemagh_mesh",nil,25],
+			["TRYK_Shemagh_G",nil,20],
+			["TRYK_Shemagh",nil,20],
+			["TRYK_Shemagh_WH",nil,20],
+			["CUP_TK_NeckScarf",nil,20],
+			["CUP_FR_NeckScarf",nil,20],
+			["CUP_FR_NeckScarf2",nil,10]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
 		[
+		["TRYK_V_Bulletproof_BL",nil,150],
+		["TRYK_V_Bulletproof_BLK",nil,150],
+		["TRYK_V_Bulletproof",nil,150],
+		["V_Press_F",nil,30]
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{
