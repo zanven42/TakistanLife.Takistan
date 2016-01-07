@@ -12,9 +12,9 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * make TPF/NATO only sell there own vehicles
 * pirce all items/vehicles  
 * Add Terroist Weapons [DONE]
-* Add Cop Uniforms
+* Add Cop Uniforms [DONE - not complete still lookin for more outfits but still ready]
 * Medic Uniforms
-* Terrirost Uniforms
+* Terrirost Uniforms 
 * Civilian Uniforms
 * Add Legal Gunstore Weapons [DONE]
 * Medic/Civ/Cop Vehicles [DONE]
