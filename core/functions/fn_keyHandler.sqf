@@ -108,6 +108,25 @@ switch (_code) do
 		};
 	};
 	
+	//Shift + F1 = Surrender
+	case 59:
+	{
+		if(_shift) then {_handled = true;};
+		if(_shift && !life_istazed) then
+		{
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player getVariable ["surrender", false]) then
+				{
+					player setVariable ["surrender", false, true];
+				} else
+				{
+					[] spawn life_fnc_surrender;
+				};
+			};
+		};
+	};
+	
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{

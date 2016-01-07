@@ -127,6 +127,7 @@ class Life_Client_Core
 		class gather {};
 		//New Shit
 		class suicideBomb {};
+		class surrender {};
 	};
 
 	class Housing
