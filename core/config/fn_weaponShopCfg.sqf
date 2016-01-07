@@ -557,7 +557,7 @@ switch(_shop) do
 						["CUP_glaunch_Mk13",nil,450000],
 						["CUP_glaunch_M32",nil,450000],
 						["CUP_srifle_M110",nil,250000],
-						["V_HarnessOGL_brn",nil,1200000],
+						["V_HarnessOGL_brn","Suicide Vest",1200000],
 						["CUP_lmg_Mk48_wdl_Aim_Laser",nil,300000],
 						["CUP_lmg_Mk48_des_Aim_Laser",nil,300000],
 						["CUP_6Rnd_HE_M203",nil,80000],

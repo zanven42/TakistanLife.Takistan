@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"TPF/NATO Clothing Shop"];
+ctrlSetText[3103,"TPF Clothing Shop"];
 
 _ret = [];
 switch (_filter) do
@@ -45,7 +45,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret pushBack ["H_Beret_Colonel",nil,550];
+			_ret pushBack ["CUP_H_TK_Beret",nil,550];
 		};
 	};
 
@@ -54,8 +54,10 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["G_Bandanna_oli",nil,25],
-			["G_Aviator",nil,20]
+			["TRYK_headset_Glasses",nil,25],
+			["TRYK_US_ESS_Glasses_TAN_BLK",nil,20],
+			["TRYK_kio_balaclava_BLK",nil,20],
+			["TRYK_Shemagh_mesh",nil,20]
 		];
 	};
 
@@ -72,7 +74,6 @@ switch (_filter) do
 			_ret pushBack ["TRYK_V_tacv1LC_SRF_OD",nil,550];
 		};
 	};
-
 
 	//Backpacks
 	case 4:

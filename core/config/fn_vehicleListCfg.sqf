@@ -2,7 +2,7 @@
 /*
 	File:
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
@@ -22,14 +22,14 @@ switch (_shop) do
 			["B_Truck_01_medical_F",60000]
 		];
 	};
-	
+
 	case "med_air_hs": {
 		_return = [
 			["B_Heli_Light_01_F",50000],
 			["O_Heli_Light_02_unarmed_F",75000]
 		];
 	};
-	
+
 	case "civ_car":
 	{
 		_return = [
@@ -57,13 +57,13 @@ switch (_shop) do
 			["RDS_Lada_Civ_01",40000]
 		];
 	};
-	
+
 	case "civ_truck":
 	{
 		_return = [
-			["C_Van_01_transport_F",60000], 
-			["C_Van_01_box_F",75000], 
-			["I_Truck_02_transport_F",275000], 
+			["C_Van_01_transport_F",60000],
+			["C_Van_01_box_F",75000],
+			["I_Truck_02_transport_F",275000],
 			["I_Truck_02_covered_F",350000],
 			["CUP_C_Ural_Open_Civ_02",450000],
 			["CUP_C_Ural_Civ_02",450000],
@@ -76,9 +76,9 @@ switch (_shop) do
 			["B_Truck_01_covered_F",450000],
 			["B_Truck_01_box_F",450000],
 			["O_Truck_03_device_F",450000]
-		];	
+		];
 	};
-	
+
 	case "reb_car":
 	{
 		_return = [
@@ -89,12 +89,12 @@ switch (_shop) do
 			["CUP_B_M1030",150000],
 			["O_G_Offroad_01_armed_F",150000],
 			["CUP_D_UAZ_MG_CHDKZ",150000],
-			["CUP_B_LR_MG_GB_W",150000], 
+			["CUP_B_LR_MG_GB_W",150000],
 			["CUP_O_Ural_Open_CHDKZ",150000],
 			["CUP_O_Ural_CHDKZ",150000]
 		];
 	};
-		
+
 	case "cop_car":
 	{
 		_return = [
@@ -107,8 +107,8 @@ switch (_shop) do
 			["CUP_I_SUV_Armored_ION",5000],
 			["CUP_B_LR_Transport_GB_D",20000],
 			["CUP_B_Dingo_Des",5000]
-		]; 
-		
+		];
+
 	if(__GETC__(life_coplevel) > 8) then {
 		_return = [
 			["CUP_B_HMMWV_M2_GPK_ACR",153000],
@@ -120,7 +120,7 @@ switch (_shop) do
 			];
 		};
 	};
-	
+
 	case "civ_air":
 	{
 		_return = [
@@ -135,7 +135,7 @@ switch (_shop) do
 			["CUP_C_DC3_CIV",750000]
 		];
 	};
-		
+
 	case "cop_air":
 	{
 		_return = [
@@ -143,7 +143,7 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F",150000],
 			["CUP_B_AW159_Unarmed_BAF",150000]
 		];
-		
+
 		if(__GETC__(life_coplevel) > 8) then {
 			_return = [
 				["CUP_B_UH1Y_UNA_F",153000],
@@ -156,7 +156,7 @@ switch (_shop) do
 			];
 		};
 	};
-	
+
 	case "cop_airhq":
 	{
 		_return pushBack
@@ -169,7 +169,7 @@ switch (_shop) do
 			["B_MRAP_01_hmg_F",750000];
 		};
 	};
-	
+
 	case "civ_ship":
 	{
 		_return = [
@@ -177,12 +177,12 @@ switch (_shop) do
 			["C_Boat_Civil_01_F",22000]
 		];
 	};
-	
+
 	case "reb_blk":
 	{
 		_return = [
 			["B_Heli_Light_01_armed_F",253000],
-			["CUP_B_Mi17_CDF",750000],
+			["CUP_O_Mi17_TK",750000],
 			["D_Heli_Light_02_F",253000],
 			["CUP_O_Mi24_P_RU",750000],
 			["CUP_O_BMP2_CHDKZ",253000],
