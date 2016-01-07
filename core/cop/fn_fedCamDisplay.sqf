@@ -19,7 +19,7 @@ if(isNil "life_fed_scam") then {
 
 switch (_mode) do {
 	case "front": {
-		life_fed_scam camSetPos [16029.1,16938.9,3.08817];
+		life_fed_scam camSetPos [5709.27,8872.64,3.08817];
 		life_fed_scam camSetTarget [16034.9,16930.6,0.00146008];
 		life_fed_scam camCommit 0;
 	};
@@ -37,7 +37,7 @@ switch (_mode) do {
 	};
 	
 	case "vault": {
-		life_fed_scam camSetPos [16002,16904.9,5.71753];
+		life_fed_scam camSetPos [5664.31,8887.7,5.71753];
 		life_fed_scam camSetTarget [15998.7,16939.7,0.00146866];
 		life_fed_scam camCommit 0;
 	};
