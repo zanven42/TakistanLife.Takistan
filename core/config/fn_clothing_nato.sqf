@@ -29,16 +29,13 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		_ret =
-		[
-			["TRYK_H_Booniehat_MARPAT_Desert",nil,25],
-			["TRYK_H_AOR1",nil,20],
-			["TRYK_H_Helmet_MARPAT_Desert2",nil,20]
+			_ret pushBack ["TRYK_H_Booniehat_MARPAT_Desert",nil,25];
+			_ret pushBack ["TRYK_H_AOR1",nil,25];
+			_ret pushBack ["TRYK_H_Helmet_MARPAT_Desert2",nil,25];
 			if(__GETC__(life_coplevel) > 13) then
 			{
 				_ret pushBack ["H_Beret_Colonel",nil,550];
 			};
-		];
 	};
 
 	//Glasses
