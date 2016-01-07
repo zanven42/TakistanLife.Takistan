@@ -21,6 +21,9 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * Map Editing.
 * Fix placment of random ATMs around map.
 * Surender Action
+* remote sql
+* lock mods etc (anti cheat)?
+* 
 
 Getting Started Guide. For Any Future Developers <3 BongLord
 =============
