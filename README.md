@@ -7,8 +7,8 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * suicide vest [DONE]
 * edit slot desiction names [DONE]
 * remove weapon addons from terrorist vendor [DONE]
-* fix the bank [Cant do it till I get the building class name I also goto add the cameras if you want them?]
-* Land_A_Mosque_big_hq_EP!- Name of the bank main building to add door lock code
+* fix the bank [DONE]
+* Bank Cameras [DONE]
 * make TPF/NATO only sell there own vehicles
 * pirce all items/vehicles  
 * Add Terroist Weapons [DONE]
