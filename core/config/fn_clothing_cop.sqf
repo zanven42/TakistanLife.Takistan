@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Altis Police Department Shop"];
+ctrlSetText[3103,"TPF/NATO Clothing Shop"];
 
 _ret = [];
 switch (_filter) do
@@ -19,30 +19,33 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",25];
+		_ret pushBack ["rds_uniform_Policeman",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,350];
-			_ret pushBack ["U_B_survival_uniform",nil,1250];
+			_ret pushBack ["CUP_U_O_TK_Officer",nil,350];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret pushBack ["rds_uniform_Policeman",nil,550];
+			_ret pushBack ["CUP_U_O_TK_Green",nil,550];
+			_ret pushBack ["CUP_U_O_TK_MixedCamo",nil,550];
 		};
 	};
 
 	//Hats
 	case 1:
 	{
+		_ret pushBack ["rds_police_cap",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["rds_police_cap",nil,75];
-			_ret pushBack ["H_Booniehat_mcamo",nil,120];
+			_ret pushBack ["H_Beret_blk",nil,350];
 		};
-
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret pushBack ["H_MilCap_mcamo",nil,100];
+			_ret pushBack ["H_Beret_02",nil,550];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret pushBack ["H_Beret_Colonel",nil,550];
 		};
 	};
 
@@ -51,28 +54,25 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["G_Shades_Black",nil,25],
-			["G_Shades_Blue",nil,20],
-			["G_Sport_Blackred",nil,20],
-			["G_Sport_Checkered",nil,20],
-			["G_Sport_Blackyellow",nil,20],
-			["G_Sport_BlackWhite",nil,20],
-			["G_Aviator",nil,75],
-			["G_Squares",nil,10],
-			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55]
+			["G_Bandanna_oli",nil,25],
+			["G_Aviator",nil,20]
 		];
 	};
 
 	//Vest
 	case 3:
 	{
-		_ret pushBack ["V_Rangemaster_belt",nil,800];
+		_ret pushBack ["CUP_V_O_TK_OfficerBelt2",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["CUP_V_O_TK_OfficerBelt2",nil,1500];
+			_ret pushBack ["TRYK_V_Sheriff_BA_OD",nil,350];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["TRYK_V_tacv1LC_SRF_OD",nil,550];
 		};
 	};
+
 
 	//Backpacks
 	case 4:
