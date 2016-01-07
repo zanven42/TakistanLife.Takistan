@@ -19,26 +19,26 @@ if(isNil "life_fed_scam") then {
 
 switch (_mode) do {
 	case "front": {
-		life_fed_scam camSetPos [5709.27,8872.64,3.08817];
-		life_fed_scam camSetTarget [16034.9,16930.6,0.00146008];
+		life_fed_scam camSetPos [5673.62,8930.31,6.97];
+		life_fed_scam camSetTarget [-53210.49,-70853.48,-13452.21];
 		life_fed_scam camCommit 0;
 	};
 	
 	case "back": {
-		life_fed_scam camSetPos [16031.1,16936.6,10.287];
-		life_fed_scam camSetTarget [16017.1,16957.3,0.597221];
+		life_fed_scam camSetPos [5636.32,8858.96,7.01];
+		life_fed_scam camSetTarget [62318.39,88519.19,-21067.75];
 		life_fed_scam camCommit 0;
 	};
 	
-	case "side": {
-		life_fed_scam camSetPos [16084.3,16997.8,23.6492] ;
-		life_fed_scam camSetTarget [16037.8,16966.7,0.00145817];
+	case "overhead": {
+		life_fed_scam camSetPos [5654.72,8893.83,19.57] ;
+		life_fed_scam camSetTarget [6274.52,8109.92,-100141.82];
 		life_fed_scam camCommit 0;
 	};
 	
 	case "vault": {
-		life_fed_scam camSetPos [5664.31,8887.7,5.71753];
-		life_fed_scam camSetTarget [15998.7,16939.7,0.00146866];
+		life_fed_scam camSetPos [5652.73,8895.95,3.46];
+		life_fed_scam camSetTarget [72699.17,-54399.22,-38937.93];
 		life_fed_scam camCommit 0;
 	};
 	
