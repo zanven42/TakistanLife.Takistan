@@ -44,7 +44,8 @@ class Mission
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Heli_Items_Luggage",
 		"A3_Structures_F_Heli_Ind_Cargo",
-		"CABuildings"
+		"CABuildings",
+		"A3_Structures_F_Heli_Items_Electronics"
 	};
 	addOnsAuto[]=
 	{
@@ -77,6 +78,7 @@ class Mission
 		"A3_Structures_F_Heli_Items_Luggage",
 		"A3_Structures_F_Heli_Ind_Cargo",
 		"CABuildings",
+		"A3_Structures_F_Heli_Items_Electronics",
 		"aia_takistan_config"
 	};
 	randomSeed=2004553;
@@ -3148,8 +3150,9 @@ class Mission
 				};
 				class Item91
 				{
-					position[]={8270.9307,296.04001,2141.1621};
-					azimut=202.86517;
+					position[]={8269.4326,296.04001,2141.6277};
+					azimut=202.86501;
+					offsetY=0.40000001;
 					special="NONE";
 					id=188;
 					side="EAST";
@@ -3397,7 +3400,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3697;
+		items=3699;
 		class Item0
 		{
 			position[]={6905.0098,56.439846,11355.115};
@@ -5886,7 +5889,7 @@ class Mission
 		{
 			position[]={5655.8418,81.919342,8891.416};
 			azimut=-99.315201;
-			offsetY=0.2;
+			offsetY=0.69999999;
 			id=451;
 			side="EMPTY";
 			vehicle="Land_CargoBox_V1_F";
@@ -40360,6 +40363,29 @@ class Mission
 			vehicle="Land_Cargo_House_V3_F";
 			skill=0.60000002;
 		};
+		class Item3697
+		{
+			position[]={6028.0698,67.06176,10443.5};
+			azimut=22.025101;
+			offsetY=0.472725;
+			id=3899;
+			side="EMPTY";
+			vehicle="Land_FlatTV_01_F";
+			skill=0.60000002;
+			text="hq_lt_1";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Federal Reserve - Front Entrance"",life_fnc_fedCamDisplay,""front""];    this addAction[""Federal Reserve - Back Entrance"",life_fnc_fedCamDisplay,""side""];    this addAction[""Federal Reserve - OverHead View"",life_fnc_fedCamDisplay,""back""];   this addAction[""Federal Reserve - Vault View"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Turn Off Display"",life_fnc_fedCamDisplay,""off""];";
+		};
+		class Item3698
+		{
+			position[]={6029.1001,67.065514,10443.1};
+			azimut=22.037001;
+			offsetY=0.46790299;
+			id=3900;
+			side="EMPTY";
+			vehicle="Land_FlatTV_01_F";
+			skill=0.60000002;
+			text="hq_lt_2";
+		};
 	};
 	class Markers
 	{
@@ -41983,7 +42009,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=4;
 		class Item0
 		{
 			position[]={0,610.15997,0};
@@ -41995,6 +42021,26 @@ class Mission
 			};
 		};
 		class Item1
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="call cba_common_fnc_monitorFrameRender";
+			class Effects
+			{
+			};
+		};
+		class Item3
 		{
 			position[]={0,610.15997,0};
 			type="ERROR";
