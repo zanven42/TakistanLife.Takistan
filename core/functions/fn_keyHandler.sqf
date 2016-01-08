@@ -46,6 +46,15 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 
 switch (_code) do
 {
+
+	//O, police gate opener
+    case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && ((playerSide == west)||(playerSide == independent)) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
+	
 	//Space key for Jumping
 	case 57:
 	{
@@ -107,26 +116,7 @@ switch (_code) do
 			[] call life_fnc_restrainAction;
 		};
 	};
-	
-	//Shift + F1 = Surrender
-	case 59:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && !life_istazed) then
-		{
-			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
-			{
-				if (player getVariable ["surrender", false]) then
-				{
-					player setVariable ["surrender", false, true];
-				} else
-				{
-					[] spawn life_fnc_surrender;
-				};
-			};
-		};
-	};
-	
+		
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
@@ -164,6 +154,7 @@ switch (_code) do
 			};
 		};
 	};
+	
 	//L Key?
 	case 38: 
 	{
@@ -183,6 +174,7 @@ switch (_code) do
 		
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
+	
 	//Y Player Menu
 	case 21:
 	{
@@ -233,6 +225,26 @@ switch (_code) do
 			};
 		};
 	};
+	
+	//Shift + F1 = Surrender
+	case 59:
+	{
+		if(_shift) then {_handled = true;};
+		if(_shift && !life_istazed) then
+		{
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player getVariable ["surrender", false]) then
+				{
+					player setVariable ["surrender", false, true];
+				} else
+				{
+					[] spawn life_fnc_surrender;
+				};
+			};
+		};
+	};
+	
 	//U Key
 	case 22:
 	{
