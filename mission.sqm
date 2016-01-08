@@ -40367,7 +40367,7 @@ class Mission
 		{
 			position[]={6028.0698,67.06176,10443.5};
 			azimut=22.025101;
-			offsetY=0.40000001;
+			offsetY=0.472725;
 			id=3899;
 			side="EMPTY";
 			vehicle="Land_FlatTV_01_F";

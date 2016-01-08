@@ -141,6 +141,7 @@ switch (_filter) do
     };
 
     //Vest
+    // Prices should be bit higher these are bulletproof vest not t-shirts \\
     case 3:
     {
         [
