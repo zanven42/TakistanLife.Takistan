@@ -22,7 +22,7 @@ switch (_filter) do
 		_ret pushBack ["TRYK_U_B_BLK_T_BK",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-		_ret pushBack ["TRYK_U_B_PCUGs_BLK",nil,350];
+			_ret pushBack ["TRYK_U_B_PCUGs_BLK",nil,350];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
@@ -83,7 +83,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["V_TacVest_blk",nil,350];
-		};
+		}
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret pushBack ["TRYK_V_tacv1_P_BK",nil,550];
