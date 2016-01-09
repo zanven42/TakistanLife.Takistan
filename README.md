@@ -23,6 +23,8 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * Surender Action [DONE] Dont know if its working ?
 * remote sql [DONE]
 * lock mods etc (anti cheat)?
+* Bank Timer, 1st door takes 2seconds
+* 
 * 
 
 Getting Started Guide. For Any Future Developers <3 BongLord
