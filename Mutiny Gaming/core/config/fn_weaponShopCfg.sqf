@@ -588,7 +588,7 @@ switch(_shop) do
 						["CUP_hgun_M9",nil,3500],
 						["CUP_hgun_Makarov",nil,3500],
 						["CUP_hgun_PB6P9_snds",nil,3500],
-						["CUP_hgun_TaurusTracker455_gold",nil,6500],
+						["Taurus Tracker Model 455",nil,6500],
 						["CUP_hgun_Glock17","Glock 17",4500],
 						["hgun_ACPC2_F",nil,4500],
 						["hgun_P07_F",nil,4000],
