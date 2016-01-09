@@ -19,29 +19,44 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["rds_uniform_Policeman",nil,25];
+		_ret pushBack ["TRYK_U_B_BLK_T_BK",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["CUP_U_O_TK_Officer",nil,350];
+			_ret pushBack ["TRYK_U_B_PCUGs_BLK",nil,350];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret pushBack ["TRYK_U_B_TANTAN_CombatUniform",nil,550];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret pushBack ["CUP_U_O_TK_Green",nil,550];
-			_ret pushBack ["CUP_U_O_TK_MixedCamo",nil,550];
+			_ret pushBack ["TRYK_U_B_TANTAN_CombatUniform",nil,550];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret pushBack ["TRYK_U_B_TANTAN_CombatUniform",nil,550];
 		};
 	};
 
 	//Hats
 	case 1:
 	{
-		_ret pushBack ["rds_police_cap",nil,25];
+		_ret pushBack ["H_Cap_police",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["H_Beret_blk",nil,350];
+			_ret pushBack ["TRYK_R_CAP_BLK",nil,350];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["TRYK_U_B_PCUGs_BLK",nil,550];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret pushBack ["TRYK_H_woolhat",nil,550];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret pushBack ["H_Beret_02",nil,550];
+			_ret pushBack ["TRYK_H_PASGT_BLK",nil,550];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
@@ -64,15 +79,22 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret pushBack ["CUP_V_O_TK_OfficerBelt2",nil,25];
+		_ret pushBack ["TRYK_V_Bulletproof_BL",nil,25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["TRYK_V_Sheriff_BA_OD",nil,350];
-			_ret pushBack ["TRYK_V_tacv10LC_OD",nil,350];
-		};
-		if(__GETC__(life_coplevel) > 2) then
+			_ret pushBack ["V_TacVest_blk",nil,350];
+		}
+		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret pushBack ["TRYK_V_tacv1LC_SRF_OD",nil,550];
+			_ret pushBack ["TRYK_V_tacv1_P_BK",nil,550];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["TRYK_V_tacv1LC_P_BK",nil,550];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret pushBack ["TRYK_V_PlateCarrier_blk",nil,550];
 		};
 	};
 
