@@ -45,7 +45,9 @@ class Mission
 		"A3_Structures_F_Heli_Items_Luggage",
 		"A3_Structures_F_Heli_Ind_Cargo",
 		"CABuildings",
-		"A3_Structures_F_Heli_Items_Electronics"
+		"A3_Structures_F_Heli_Items_Electronics",
+		"CUP_Creatures_People_Military_DummyInfantrySet",
+		"A3_Signs_F_AD"
 	};
 	addOnsAuto[]=
 	{
@@ -76,7 +78,7 @@ class Mission
 		"A3_Structures_F_Heli_Items_Luggage",
 		"A3_Structures_F_Heli_Ind_Cargo",
 		"CABuildings",
-		"A3_Structures_F_Heli_Items_Electronics",
+		"A3_Signs_F_AD",
 		"aia_takistan_config"
 	};
 	randomSeed=2004553;
@@ -3365,7 +3367,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3697;
+		items=3696;
 		class Item0
 		{
 			position[]={6905.0098,56.439846,11355.115};
@@ -40258,76 +40260,65 @@ class Mission
 		};
 		class Item3690
 		{
-			position[]={6028.0698,67.06176,10443.5};
-			azimut=22.025101;
-			offsetY=0.40000001;
-			id=3889;
-			side="EMPTY";
-			vehicle="Land_FlatTV_01_F";
-			skill=0.60000002;
-			text="hq_lt_1";
-			init="this enableSimulation false;  this allowDamage false;  this addAction[""Federal Reserve - Front Entrance"",life_fnc_fedCamDisplay,""front""];    this addAction[""Federal Reserve - Back Entrance"",life_fnc_fedCamDisplay,""side""];    this addAction[""Federal Reserve - OverHead View"",life_fnc_fedCamDisplay,""back""];   this addAction[""Federal Reserve - Vault View"",life_fnc_fedCamDisplay,""vault""];  this addAction[""Turn Off Display"",life_fnc_fedCamDisplay,""off""];";
-		};
-		class Item3691
-		{
-			position[]={6029.1001,67.065514,10443.1};
-			azimut=22.037001;
-			offsetY=0.46790299;
-			id=3890;
-			side="EMPTY";
-			vehicle="Land_FlatTV_01_F";
-			skill=0.60000002;
-			text="hq_lt_2";
-		};
-		class Item3692
-		{
 			position[]={5719.8789,83.040001,11287.494};
 			azimut=-135.08501;
-			id=3891;
+			id=3889;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			text="air_sp_3";
 		};
-		class Item3693
+		class Item3691
 		{
 			position[]={5764.7319,83.040001,11329.03};
 			azimut=-135.08501;
-			id=3892;
+			id=3890;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			text="air_sp_3_1";
 		};
-		class Item3694
+		class Item3692
 		{
 			position[]={5811.2124,83.040001,11368.897};
 			azimut=-135.08501;
-			id=3893;
+			id=3891;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			text="air_sp_3_1_1";
 		};
-		class Item3695
+		class Item3693
 		{
 			position[]={8170.7783,296.04001,2003.6515};
 			azimut=-135.08501;
-			id=3894;
+			id=3892;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			text="air_sp_3_1_2";
 		};
-		class Item3696
+		class Item3694
 		{
 			position[]={8216.2822,296.04001,2028.0931};
 			azimut=-135.08501;
-			id=3895;
+			id=3893;
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
 			text="air_sp_3_1_2_1";
+		};
+		class Item3695
+		{
+			position[]={6024.6899,66.985695,10438.3};
+			azimut=200.354;
+			offsetY=-0.114532;
+			id=3894;
+			side="EMPTY";
+			vehicle="SignAd_Sponsor_F";
+			skill=0.60000002;
+			text="hq_lt_1";
+			init="this enableSimulation false; this allowDamage false; this addAction[""National Bank - Front Entrance"",life_fnc_fedCamDisplay,""front""]; this addAction[""National Bank - Back Entrance"",life_fnc_fedCamDisplay,""side""]; this addAction[""National Bank - OverHead View"",life_fnc_fedCamDisplay,""back""]; this addAction[""National Bank - Vault View"",life_fnc_fedCamDisplay,""vault""]; this addAction[""Turn Off Display"",life_fnc_fedCamDisplay,""off""];";
 		};
 	};
 	class Markers
@@ -41872,7 +41863,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=4;
+		items=6;
 		class Item0
 		{
 			position[]={0,610.15997,0};
@@ -41904,6 +41895,26 @@ class Mission
 			};
 		};
 		class Item3
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={0,610.15997,0};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="call cba_common_fnc_monitorFrameRender";
+			class Effects
+			{
+			};
+		};
+		class Item5
 		{
 			position[]={0,610.15997,0};
 			type="ERROR";
