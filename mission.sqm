@@ -3379,7 +3379,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={5795.7236,100.87422,9552.4492};
+			position[]={5792.7866,100.67434,9545.3975};
 			id=200;
 			side="EMPTY";
 			vehicle="Land_cmp_Hopper_F";
@@ -40464,7 +40464,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={5794.6396,100.88439,9552.6563};
+			position[]={5791.7026,100.64339,9545.6045};
 			name="sand_1";
 			text="Sand Mine";
 			type="mil_triangle";
