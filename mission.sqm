@@ -82,8 +82,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Altis Life RPG";
-		overviewText="Altis Life RPG 3.1.4.8";
+		briefingName="Takistan Life RPG";
+		overviewText="Takistan Life RPG v1.0";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
@@ -5852,9 +5852,9 @@ class Mission
 		};
 		class Item249
 		{
-			position[]={5655.8418,81.919342,8891.416};
+			position[]={5654.9048,81.917847,8893.0576};
 			azimut=-99.315201;
-			offsetY=1;
+			offsetY=1.3;
 			id=448;
 			side="EMPTY";
 			vehicle="Land_CargoBox_V1_F";
