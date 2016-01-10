@@ -2,10 +2,10 @@
 /*
 	File: fn_spawnPointCfg.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration for available spawn points depending on the units side.
-	
+
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
@@ -20,16 +20,16 @@ switch (_side) do
 		_return = [
 			["cop_spawn_3","TPF Rasman LAC",""]
 		];
-		
+
 		if(__GETC__(life_coplevel) > 8) then {
 			_return = [
 				["cop_spawn_1","NATO HQ",""],
 				["cop_spawn_4","NATO Air Unit",""]
 			];
-		};	
+		};
 	};
-	
-	case civilian: 	
+
+	case civilian:
 	{
 		_return = [
 				["civ_spawn_1","Rasman",""],
@@ -37,21 +37,19 @@ switch (_side) do
 				["civ_spawn_3","Chaman",""],
 				["civ_spawn_4","Nagara",""]
 		];
-		
+
 		if(license_civ_rebel && playerSide == civilian) then {
 			_return = [
 				["civ_spawn_2","North Karachinar",""],
 				["civ_spawn_3","Chaman",""],
 				["terrorist_spawn","Terrorist Area",""]
 			];
-		};	
+		};
 	};
-	
+
 	case independent: {
 		_return = [
-			["medic_spawn_2","Rasman Medical",""],
-			["medic_spawn_1","Garmsar Medical",""],
-			["medic_spawn_3","Chaman Medical",""]
+			["medic_spawn_2","Rasman Medical",""]
 		];
 	};
 };
