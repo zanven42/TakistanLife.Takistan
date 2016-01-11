@@ -22,7 +22,7 @@ Can't do much more until I get the idea of what you want. Will talk to you tomor
 * Fix placment of random ATMs around map.
 * Surender Action [DONE] Dont know if its working ?
 * remote sql [DONE]
-* lock mods etc (anti cheat)?
+* lock mods etc (anti cheat)? - lol zbot (coming soon blizzard soon)
 * 
 
 Getting Started Guide. For Any Future Developers <3 BongLord
