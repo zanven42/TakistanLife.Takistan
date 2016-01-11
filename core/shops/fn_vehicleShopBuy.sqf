@@ -1,7 +1,7 @@
 /*
 	File: fn_vehicleShopBuy.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	Does something with vehicle purchasing.
 */
@@ -44,8 +44,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_HelipadRescue_F"],50] select 0;
-	_vehicle setPosATL (_hs modelToWorld [1,1,1.1]);
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["med_heli"],0.1] select 0;
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	_vehicle lock 2;
 	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
@@ -72,13 +72,13 @@ switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
-
+	
 	case civilian: {
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
-
+	
 	case independent: {
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
