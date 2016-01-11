@@ -46,6 +46,10 @@ switch (_filter) do
 		{
 			_ret pushBack ["TRYK_R_CAP_BLK",nil,350];
 		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["TRYK_U_B_PCUGs_BLK",nil,550];
+		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret pushBack ["TRYK_H_woolhat",nil,550];
